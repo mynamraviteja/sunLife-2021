@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Financial Services Account Listing" icon-name="custom:custom63">
+        <div class="slds-m-around_medium"> 
+            <lightning-input type = "search" name="acctSearch" value={searchKey} onchange={handleKeywordChange} placeholder="Search Accounts...">
+            </lightning-input>
+        </div>
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={data}
+                onsave={handleSave}
+                draft-values={tempValues}
+                columns={columns}
+                hide-checkbox-column
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={sortHandle}
+                >
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
