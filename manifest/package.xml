@@ -38,8 +38,12 @@
         <name>Profile</name>
     </types>
     <types>
-        <members>*</members>
+        <members>SunLife</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Sun_Life_Application</members>
+        <name>CustomApplication</name>
     </types>
     <version>50.0</version>
 </Package>
